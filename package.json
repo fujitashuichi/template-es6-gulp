@@ -1,0 +1,32 @@
+{
+  "name": "moonmadness",
+  "version": "1.0.0",
+  "description": "## Template of ES6 site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fujitashuichi/moonmadness.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fujitashuichi/moonmadness/issues"
+  },
+  "homepage": "https://github.com/fujitashuichi/moonmadness#readme",
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-babel": "^5.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-watch": "^4.3.5",
+    "node-sass": "^3.3.3",
+    "require-dir": "^0.3.0",
+    "through2": "^2.0.0",
+    "vinyl-transform": "^1.0.0"
+  }
+}
