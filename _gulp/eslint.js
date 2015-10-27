@@ -17,16 +17,21 @@ gulp.task('lint', function() {
 	var files = ['./src/es-six/**/*.js'];
 	return gulp.src(files)
 		.pipe(eslint({
-			globals: {
-				'jQuery': true,
-				'$': true
+			"globals": {
+				"jQuery": true,
+				"$": true
 			},
-			ecmaFeatures: {
-				'arrowFunctions': true,
-				'blockBindings': true,
-				'forOf': true,
-				'jsx': true
+			"env": {
+				"browser": true,
+				"node": true,
+				"es6": true
 			},
+			"ecmaFeatures": {
+				"arrowFunctions": true,
+				"blockBindings": true,
+				"forOf": true,
+				"jsx": true
+			}
 		}))
 		.pipe(eslint.format())
 		.pipe(eslint.failOnError());
