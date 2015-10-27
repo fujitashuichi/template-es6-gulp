@@ -1,9 +1,15 @@
+/*/--------------------------------\*\
+|*| REQUIRE
+\*\--------------------------------/*/
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 
 //var errorMessage = "Error: <%= error.message %>";
 
+/*/--------------------------------\*\
+|*| TASKS
+\*\--------------------------------/*/
 // SCSS
 gulp.task('sass', function() {
 	var files = ['./src/scss/main.scss'];

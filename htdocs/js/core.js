@@ -3,7 +3,7 @@
 
 module.exports = $(function () {
 	/*/--------------------------------\*\
- !*¡ VARIABLES
+ |*| VARIABLES
  \*\--------------------------------/*/
 	// const
 	var fps = 30;
@@ -42,7 +42,7 @@ module.exports = $(function () {
 	var bgcolor = "#012";
 
 	/*/--------------------------------\*\
- !*¡ INIT/PLAY
+ |*| INIT/PLAY
  \*\--------------------------------/*/
 	$(function () {
 		for (var i = 0; i < ballNum; i++) {
@@ -60,7 +60,7 @@ module.exports = $(function () {
 	});
 
 	/*/--------------------------------\*\
- !*¡ INTERVAL HANDLER
+ |*| INTERVAL HANDLER
  \*\--------------------------------/*/
 	function onDraw() {
 		// reset
@@ -70,7 +70,7 @@ module.exports = $(function () {
 	}
 
 	/*/--------------------------------\*\
- !*¡ OBJECTS
+ |*| OBJECTS
  \*\--------------------------------/*/
 	// clear display
 	function clearDisp() {

@@ -1,9 +1,15 @@
+/*/--------------------------------\*\
+|*| REQUIRE
+\*\--------------------------------/*/
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var browserify = require('browserify');
 //var transform = require('vinyl-transform');
 var through2 = require('through2');
 
+/*/--------------------------------\*\
+|*| TASKS
+\*\--------------------------------/*/
 // browserify
 gulp.task('browserify', function() {
 

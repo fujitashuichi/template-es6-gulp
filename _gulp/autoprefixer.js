@@ -1,9 +1,15 @@
+/*/--------------------------------\*\
+|*| REQUIRE
+\*\--------------------------------/*/
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 
 //var errorMessage = "Error: <%= error.message %>";
 
+/*/--------------------------------\*\
+|*| TASKS
+\*\--------------------------------/*/
 // Autoprefixer
 gulp.task('autoprefixer', function() {
 	var files = ['./src/dist/css/main.css'];

@@ -1,6 +1,6 @@
 module.exports = $(() => {
 	/*/--------------------------------\*\
-	!*¡ VARIABLES
+	|*| VARIABLES
 	\*\--------------------------------/*/
 	// const
 	const fps = 30;
@@ -39,7 +39,7 @@ module.exports = $(() => {
 	let bgcolor = "#012";
 
 	/*/--------------------------------\*\
-	!*¡ INIT/PLAY
+	|*| INIT/PLAY
 	\*\--------------------------------/*/
 	$(() => {
 		for (var i = 0; i < ballNum; i++) {
@@ -57,7 +57,7 @@ module.exports = $(() => {
 	});
 
 	/*/--------------------------------\*\
-	!*¡ INTERVAL HANDLER
+	|*| INTERVAL HANDLER
 	\*\--------------------------------/*/
 	function onDraw() {
 		// reset
@@ -67,7 +67,7 @@ module.exports = $(() => {
 	}
 
 	/*/--------------------------------\*\
-	!*¡ OBJECTS
+	|*| OBJECTS
 	\*\--------------------------------/*/
 	// clear display
 	function clearDisp() {
