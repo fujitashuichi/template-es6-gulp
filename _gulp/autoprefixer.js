@@ -11,7 +11,7 @@ var autoprefixer = require('gulp-autoprefixer');
 |*| TASKS
 \*\--------------------------------/*/
 // Autoprefixer
-gulp.task('autoprefixer', function() {
+gulp.task('autoprefixer', ['sass'], function() {
 	var files = ['./src/dist/css/main.css'];
 	gulp.src(files)
 		.pipe(plumber()) // error時にwatchを止めないやつ

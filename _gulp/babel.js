@@ -11,7 +11,7 @@ var babel = require('gulp-babel');
 |*| TASKS
 \*\--------------------------------/*/
 // Babel
-gulp.task('babel', function() {
+gulp.task('babel', ['lint'], function() {
 	var files = ['./src/es-six/**/*.js'];
 	gulp.src(files)
 		.pipe(plumber())

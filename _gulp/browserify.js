@@ -11,7 +11,7 @@ var through2 = require('through2');
 |*| TASKS
 \*\--------------------------------/*/
 // browserify
-gulp.task('browserify', function() {
+gulp.task('browserify', ['babel'], function() {
 
 	var files = ['./src/dist/js/*.js'];
 

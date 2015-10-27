@@ -2,22 +2,31 @@
 |*| REQUIRE
 \*\--------------------------------/*/
 var gulp = require('gulp');
-var watch = require('gulp-eslint');
+var eslint = require('gulp-eslint');
 
-//var errorMessage = "Error: <%= error.message %>";
+//var errorMessage = 'Error: <%= error.message %>';
 
 /*/--------------------------------\*\
 |*| TASKS
 \*\--------------------------------/*/
+// lint seting in commentout
+/*eslint arrow-parens: [2, "always"]*/
+/*eslint-env es6*/
 // ESlint
 gulp.task('lint', function() {
 	var files = ['./src/es-six/**/*.js'];
-	gulp.src(files)
+	return gulp.src(files)
 		.pipe(eslint({
 			globals: {
 				'jQuery': true,
 				'$': true
-			}
+			},
+			ecmaFeatures: {
+				'arrowFunctions': true,
+				'blockBindings': true,
+				'forOf': true,
+				'jsx': true
+			},
 		}))
 		.pipe(eslint.format())
 		.pipe(eslint.failOnError());

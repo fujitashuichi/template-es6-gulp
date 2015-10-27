@@ -12,4 +12,4 @@ var dir = requireDir('./_gulp');
 \*\--------------------------------/*/
 
 // Default
-gulp.task('default', ['watch']);
+gulp.task('default', ['run']);
