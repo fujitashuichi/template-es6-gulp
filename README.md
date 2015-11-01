@@ -17,6 +17,9 @@
 		- through2
 		- vinyl-transform(❌)
 
+- lint
+	- ESlint
+
 ---
 
 ### memo!
