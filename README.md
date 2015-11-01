@@ -38,3 +38,6 @@
 - browserify
 	- core.jsのみでおけ。
 	- 他はrequierで入るんでいらん。
+
+renamed
+
