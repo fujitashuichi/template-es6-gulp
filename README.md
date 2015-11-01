@@ -39,5 +39,9 @@
 	- core.jsのみでおけ。
 	- 他はrequierで入るんでいらん。
 
+- ESlint
+	- babelでコンパイルする前に走るよ。
+	- jsx, arrowをtrueにしないと'=>'で怒られちゃう。
+
 renamed
 
