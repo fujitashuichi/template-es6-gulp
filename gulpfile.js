@@ -12,5 +12,5 @@ var dir = requireDir('./_gulp');
 \*\--------------------------------/*/
 
 // Default
-gulp.task('default', ['run']);
+gulp.task('default', ['run', 'sync']);
 console.log('[**** GULP START! ****]');
