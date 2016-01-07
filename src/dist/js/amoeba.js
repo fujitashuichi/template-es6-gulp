@@ -5,9 +5,9 @@ module.exports = $(function () {
  |*| VARIABLES
  \*\--------------------------------/*/
 	// const
-	var fps = 30;
+	var fps = 60;
 	var frameMsec = 100 / fps >> 0;
-	var ballNum = 153;
+	var ballNum = 500;
 
 	// set canvas
 	var cvs = $(".amoeba").get(0);
@@ -38,7 +38,7 @@ module.exports = $(function () {
 	var white = "rgba(255,255,255,1)";
 	var gray = "rgba(153,153,153,1)";
 	var black = "rgba(0,0,0,1)";
-	var bgcolor = "#012";
+	var bgcolor = "#000";
 
 	/*/--------------------------------\*\
  |*| INIT/PLAY
@@ -46,13 +46,13 @@ module.exports = $(function () {
 	$(function () {
 		for (var i = 0; i < ballNum; i++) {
 			// speed
-			speedX[i] = Math.random() - 0.5;
-			speedY[i] = Math.random() - 0.5;
+			speedX[i] = (Math.random() - 0.5) * 4;
+			speedY[i] = (Math.random() - 0.5) * 4;
 			// first points
 			locX[i] = Math.random() * width;
 			locY[i] = Math.random() * height;
 			// radius
-			ball[i] = Math.random() * 8;
+			ball[i] = Math.random() * 32;
 		}
 		// set event handler
 		setInterval(onDraw, frameMsec);
@@ -97,7 +97,7 @@ module.exports = $(function () {
 			ctx.shadowColor = white;
 			// draw ball
 			ctx.beginPath();
-			ctx.fillStyle = white;
+			ctx.fillStyle = black;
 			ctx.arc(locX[i], locY[i], ball[i], 0, Math.PI * 2.0, true);
 			ctx.fill();
 		}
