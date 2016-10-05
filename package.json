@@ -1,6 +1,6 @@
 {
   "name": "template-es6-gulp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "## Template of ES6 site",
   "main": "index.js",
   "scripts": {
@@ -8,27 +8,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fujitashuichi/moonmadness.git"
+    "url": "git+https://github.com/fujitashuichi/template-es6-gulp.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "shuichi fujita",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fujitashuichi/moonmadness/issues"
+    "url": "https://github.com/fujitashuichi/template-es6-gulp/issues"
   },
-  "homepage": "https://github.com/fujitashuichi/moonmadness#readme",
+  "homepage": "https://github.com/fujitashuichi/template-es6-gulp#readme",
   "devDependencies": {
+    "babelify": "^6.4.0",
     "browser-sync": "^2.11.0",
     "browserify": "^11.2.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-babel": "^5.2.1",
     "gulp-eslint": "^1.0.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sass": "^2.0.4",
-    "gulp-watch": "^4.3.5",
-    "node-sass": "^3.3.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.9",
     "require-dir": "^0.3.0",
-    "through2": "^2.0.0",
-    "vinyl-transform": "^1.0.0"
+    "through2": "^2.0.1"
   }
 }
