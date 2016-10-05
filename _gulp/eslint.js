@@ -13,7 +13,7 @@ var eslint = require('gulp-eslint');
 /*eslint arrow-parens: [2, "always"]*/
 /*eslint-env es6*/
 // ESlint
-gulp.task('lint', function() {
+gulp.task('lint:js', function() {
 	var files = ['./src/es-six/**/*.js'];
 	return gulp.src(files)
 		.pipe(eslint({

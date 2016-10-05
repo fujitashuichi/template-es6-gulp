@@ -15,7 +15,7 @@ gulp.task('run', function() {
   // css
   gulp.watch('./src/scss/**/*.scss', ['build:sass']);
   // js
-  gulp.watch('./src/js/**/*.js', ['lint:js']);
+  gulp.watch('./src/js/**/*.js', ['build:js']);
 });
 
 // 一応直列。distフォルダを監視。変更で次のタスクが発火。

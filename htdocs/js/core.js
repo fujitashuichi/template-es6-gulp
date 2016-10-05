@@ -114,11 +114,13 @@ module.exports = $(function () {
 });
 
 // -------- end -------- //
+
 },{}],2:[function(require,module,exports){
 'use strict';
 
 $(function () {
-	// require some modules
+	// require modules
 	var amoeba = require('./amoeba.js');
 });
+
 },{"./amoeba.js":1}]},{},[2]);
