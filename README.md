@@ -22,6 +22,17 @@
 
 ---
 
+## Install
+
+- `$ npm install`
+
+## Run
+
+- `$ npm run run`: watch & build
+- `$ npm run sync`: preview in browser
+
+---
+
 ### memo!
 
 - memo
